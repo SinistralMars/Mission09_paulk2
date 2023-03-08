@@ -1,6 +1,7 @@
 ﻿@page
 @model BookStore.Pages.CartModel
 @{
+    ViewData["Title"] = "Cart";
 }
 
 <h2>Your Cart</h2>
@@ -17,7 +18,7 @@
     </thead>
 
     <tbody>
-        @foreach(var i in Model.Basket.Items)
+        @foreach (var i in Model.Basket.Items)
         {
             <tr>
                 <td class="text-center">@i.Quantity</td>
