@@ -4,7 +4,7 @@
 @model IEnumerable<string>
 
 <a asp-controller="Home" asp-action="Index" asp-route-bookCategory="" asp-route-pageNum="1" 
-   class="btn btn-block @(ViewBag.SelectedCategory == null ? "btn-primary" : "btn-outline-secondary")">Home</a>
+   class="btn btn-block btn-outline-secondary")">Home</a>
 
 @foreach (string t in Model)
 {
